@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload form</title>
+    <link rel="stylesheet" href="upload.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">SUBASHREE</div>
+
+        <ul class="nav-links">
+          <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li>
+            <a href="#">CHOOSE ME <i class="bx bx-chevron-down"></i></a>
+          </li>
+          <li><a href="#">HELP</a></li>
+        </ul>
+      </nav>
+    </header>
+    <header class="profilecard">
+      <h2>PROFILE CARD</h2>
+    </header>
+    <section>
+      <div class="uploadform">
+        <!-- <form class="labelfield" onsubmit="return valueadd(event)"> -->
+        <form
+          class="labelfield"
+          action="http://localhost:3000/.netlify/functions/app/addprofile"
+          method="POST"
+        >
+          <label for="">NAME:</label>
+          <input type="text" id="name1" name="name" required />
+          <label for="">DESCRIPTION:</label>
+          <input type="text" id="desc" maxlength="250" name="desc" required />
+          <label for="">ROLE:</label>
+          <input type="text" id="role" name="role" required />
+          <label for="">LINKED IN URL:</label>
+          <input type="url" id="linkedin" name="linkedid" required />
+          <label for="">PROFILE PHOTO:</label>
+          <input type="file" id="profphoto" name="profilephoto" required />
+          <label for="">RESUME:</label>
+          <input type="file" id="resume" name="resume" required />
+          <input type="submit" />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

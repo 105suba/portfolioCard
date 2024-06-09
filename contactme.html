@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .contactus h2{
+            margin-top: 35px;
+               text-align: center;
+        }
+        .contactcontainer{
+            display: flex;
+               align-items: center;
+               justify-content: center;
+
+               padding: 20px 20px;
+
+        }
+        .contactcontainer form{
+            width: 500px;
+        padding: 18px 16px;
+        margin-top: 18px;
+        box-shadow: 0px 0px 10px 0 #0d20318c;
+
+
+        }
+        .contactcontainer input{
+                  width: 95%;
+                 margin: 10px 10px;
+                 padding: 20px 20px;
+                 border-style: dotted;         
+        }
+        .contactcontainer ::placeholder{
+            color:#100716;
+            
+        
+        }
+        .contactcontainer input[type=submit]{
+            background-color: #100716;
+            color: aliceblue;
+            
+        }
+
+
+        
+
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <section class="contactus">
+        <h2>Contact Us</h2>
+        <div class="contactcontainer">
+           
+            <form >
+                <input type="text" placeholder="Enter Your Name">
+                <input type="text" placeholder="Enter Your Email">
+                <input type="text" placeholder="Enter Your Phone Number">
+                <input type="text" placeholder="Comments">
+                <input type="submit" >
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
